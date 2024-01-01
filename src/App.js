@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 // import Expenses from "./components/Expenses/Expenses";
 // import NewExpense from "./components/NewExpenses/NewExpense";
 import AddLog from "./components/Log/AddLog";
 
-const DUMMY_EXPENSES = [];
+// const DUMMY_EXPENSES = [];
 
 // const DUMMY_EXPENSES = [
 // 	{

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpenses/NewExpense";
 
@@ -33,6 +33,10 @@ const DUMMY_EXPENSES = [
 
 function App() {
 	const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
+
+	useEffect(() => {
+		document.title = "Budget Software";
+	}, []);
 
 	function addExpenseHandler(expense) {
 		console.log(expense);

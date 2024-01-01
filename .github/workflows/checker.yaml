@@ -28,7 +28,7 @@ jobs:
                   npx eslint src/
 
             - name: Prettier
-              run: npx prettier --check quotes.json src/
+              run: npx prettier --check src/
 
             - name: Outcome
               run: echo "This job's status is ${{ job.status }}"

@@ -1,0 +1,34 @@
+# This is a basic workflow to make sure that everything is formatted correctly
+
+name: Linter
+
+on:
+    push:
+        branches: ["main"]
+    pull_request:
+        branches: ["main"]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Start
+              run: echo "Starting check"
+
+            - name: Install dependencies
+              run: |
+                  npm install es
+                  npm install --save-dev --save-exact prettier
+
+            - name: Lint
+              run: |
+                  npx eslint src/
+
+            - name: Prettier
+              run: npx prettier --check quotes.json src/
+
+            - name: Outcome
+              run: echo "This job's status is ${{ job.status }}"

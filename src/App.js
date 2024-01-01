@@ -43,6 +43,9 @@ function App() {
 
 	return (
 		<div>
+			<head>
+				<title>Budget Software</title>
+			</head>
 			<NewExpense onAddExpense={addExpenseHandler} />
 			<Expenses items={expenses} />
 		</div>

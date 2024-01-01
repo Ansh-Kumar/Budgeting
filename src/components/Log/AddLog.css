@@ -1,0 +1,25 @@
+/* Style for the button */
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #7fff7f; /* Light neon green */
+	color: #000; /* Black text color */
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 5px;
+}
+  
+/* Center the button relative to its container */
+.container {
+	margin: 2rem;
+	position: relative;
+}
+
+.button-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+  
